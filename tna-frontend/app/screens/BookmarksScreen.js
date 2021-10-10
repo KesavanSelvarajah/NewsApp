@@ -43,14 +43,14 @@ const datas = [
     },
 ]
 
-export default function TopTenTrendingScreen() {
+export default function BookmarksScreen() {
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.titleContainer}>
-                <Text style={styles.title}>Top Ten Trending</Text>
-                <Text style={styles.subtitle}>Get to know what is trending in your area.</Text>
+                <Text style={styles.title}>Bookmarks</Text>
+                <Text style={styles.subtitle}>Saved articles in the library</Text>
             </View>
-            <View style={styles.trendsContainer}>
+            <View style={styles.bookmarksContainer}>
                 <FlatList
                     data={datas}
                     keyExtractor={datas => datas.id.toString()}
@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
         marginStart: 20,
         marginEnd: 20,
     },
-    trendsContainer: {
+    bookmarksContainer: {
         flex: 6,
     },
 })

@@ -1,8 +1,8 @@
 import React from 'react'
-import { StyleSheet, SafeAreaView, View, Text, FlatList } from 'react-native'
+import { StyleSheet, Text, View, SafeAreaView, FlatList } from 'react-native'
+import Card from '../components/Card'
 
 import colors from '../../config/colors'
-import Card from '../components/Card'
 
 const datas = [
     {
@@ -43,14 +43,14 @@ const datas = [
     },
 ]
 
-export default function TopTenTrendingScreen() {
+export default function DailyDigestScreen() {
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.titleContainer}>
-                <Text style={styles.title}>Top Ten Trending</Text>
-                <Text style={styles.subtitle}>Get to know what is trending in your area.</Text>
+                <Text style={styles.title}>Daily Digest</Text>
+                <Text style={styles.subtitle}>Get to know what happened today.</Text>
             </View>
-            <View style={styles.trendsContainer}>
+            <View style={styles.digestsContainer}>
                 <FlatList
                     data={datas}
                     keyExtractor={datas => datas.id.toString()}
@@ -85,8 +85,7 @@ const styles = StyleSheet.create({
         marginStart: 20,
         marginEnd: 20,
     },
-    trendsContainer: {
+    digestsContainer: {
         flex: 6,
     },
 })
-

@@ -3,11 +3,13 @@ import { StyleSheet, SafeAreaView, View, Text } from 'react-native'
 
 import colors from '../../config/colors'
 import AppButton from '../components/AppButton'
-import AppIconButton from '../components/AppIconButton'
+import AppCategoryButton from '../components/AppCategoryButton'
+import {MaterialCommunityIcons} from '@expo/vector-icons';
 
 export default function NewsCategoriesScreen() {
     return (
         <SafeAreaView style={styles.container}>
+            <MaterialCommunityIcons name='arrow-left' size={25} color='black' style={styles.icon}/>
             <View style={styles.titleContainer}>
                 <Text style={styles.title}>Select your favourite topics</Text>
                 <Text style={styles.subtitle}>Select some of your favorite topics to let us suggest better news for you.</Text>
@@ -15,47 +17,47 @@ export default function NewsCategoriesScreen() {
             <View style={styles.categoryContainer}>
             <View style={styles.categoryRow}>
                     <View style={styles.categoryColumn}>
-                        <AppIconButton title='Politics' iconName='vote' iconSize={20} color='lightGrey'/>
+                        <AppCategoryButton title='Politics' iconName='vote' iconSize={20} color='lightGrey'/>
                     </View>
                     <View style={styles.categoryColumn}>
-                        <AppIconButton title='Entertainment' iconName='movie' iconSize={20} color='lightGrey'/>
+                        <AppCategoryButton title='Entertainment' iconName='movie' iconSize={20} color='lightGrey'/>
                     </View>
                 </View>
                 <View style={styles.categoryRow}>
                 <View style={styles.categoryColumn}>
-                        <AppIconButton title='World' iconName='globe-model' iconSize={20} color='lightGrey'/>
+                        <AppCategoryButton title='World' iconName='globe-model' iconSize={20} color='lightGrey'/>
                     </View>
                     <View style={styles.categoryColumn}>
-                        <AppIconButton title='Technology' iconName='gamepad-variant' iconSize={20} color='lightGrey'/>
+                        <AppCategoryButton title='Technology' iconName='gamepad-variant' iconSize={20} color='lightGrey'/>
                     </View>
                 </View>
                 <View style={styles.categoryRow}>
                 <View style={styles.categoryColumn}>
-                        <AppIconButton title='Sports' iconName='football' iconSize={20} color='lightGrey'/>
+                        <AppCategoryButton title='Sports' iconName='football' iconSize={20} color='lightGrey'/>
                     </View>
                     <View style={styles.categoryColumn}>
-                        <AppIconButton title='Business' iconName='store' iconSize={20} color='lightGrey'/>
+                        <AppCategoryButton title='Business' iconName='store' iconSize={20} color='lightGrey'/>
                     </View>
                 </View>
                 <View style={styles.categoryRow}>
                 <View style={styles.categoryColumn}>
-                        <AppIconButton title='Health' iconName='run' iconSize={20} color='lightGrey'/>
+                        <AppCategoryButton title='Health' iconName='run' iconSize={20} color='lightGrey'/>
                     </View>
                     <View style={styles.categoryColumn}>
-                        <AppIconButton title='Religion' iconName='hinduism' iconSize={20} color='lightGrey'/>
+                        <AppCategoryButton title='Religion' iconName='hinduism' iconSize={20} color='lightGrey'/>
                     </View>
                 </View>
                 <View style={styles.categoryRow}>
                 <View style={styles.categoryColumn}>
-                        <AppIconButton title='Travel' iconName='beach' iconSize={20} color='lightGrey'/>
+                        <AppCategoryButton title='Travel' iconName='beach' iconSize={20} color='lightGrey'/>
                     </View>
                     <View style={styles.categoryColumn}>
-                        <AppIconButton title='Fashion' iconName='tshirt-v' iconSize={20} color='lightGrey'/>
+                        <AppCategoryButton title='Fashion' iconName='tshirt-v' iconSize={20} color='lightGrey'/>
                     </View>
                 </View>
             </View>
             <View style={styles.categoryButtonContainer}>
-                <AppButton title='Next'></AppButton>
+                <AppButton title='Save'></AppButton>
             </View>
         </SafeAreaView>
     )
@@ -64,6 +66,11 @@ export default function NewsCategoriesScreen() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+    },
+    icon: {
+        position: 'absolute',
+        left: 20,
+        top: 45,
     },
     categoryRow: {
         flex: 1,
@@ -81,11 +88,12 @@ const styles = StyleSheet.create({
         fontSize: 23,
         fontWeight: 'bold',
         marginTop: 40,
-        marginStart: 20,
+        alignSelf: 'center',
     },
     subtitle: {
         color: colors.grey,
         fontSize: 13,
+        marginTop: 10,
         marginStart: 20,
         marginEnd: 20,
     },

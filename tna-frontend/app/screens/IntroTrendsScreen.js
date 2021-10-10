@@ -10,7 +10,7 @@ export default function IntroTrendsScreen() {
             <Image style= {styles.trendsImage} source={require("../assets/trends.jpg")}/>
             <View style= {styles.trendsDescription}> 
                 <Text style= {styles.trendsTitle}>Top Ten Trends</Text>
-                <Text numberOfLines={2} style= {styles.trendsSubtitle}>Get to know what is trending in your area</Text>
+                <Text numberOfLines={2} style= {styles.trendsSubtitle}>Get to know what is trending in your surroundings</Text>
             </View>
             <View style= {styles.trendsButtonContainer}>
                 <AppButton title='Next' style= {styles.trendsButton}></AppButton>

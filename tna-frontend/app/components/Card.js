@@ -1,42 +1,52 @@
 import React from 'react';
-import { View, StyleSheet, Image, Text} from "react-native";
+import { View, StyleSheet, Image, Text, TouchableOpacity} from "react-native";
 
 import colors from '../../config/colors';
 
-function Card({ title, category, image }) {
+function Card({ title, category, image, onPress}) {
     return (
-        <View style={styles.card}>
-            <Image style={styles.image} source={image} />
-            <View style={styles.detailsContainer}>
-                <Text style={styles.title}>{title}</Text>
-                <Text style={styles.category}>{category}</Text>
+        <TouchableOpacity onPress={onPress}>
+            <View style={styles.card}>
+                <View style={styles.imageContainer}>
+                <Image resizeMode='cover' style={styles.cardImage} source={image}/>
+                </View>
+                <View style={styles.detailsContainer}>
+                    <Text  style={styles.trendCategory}>{category}</Text>
+                    <Text numberOfLines={3}  style={styles.trendTitle}>{title}</Text>
+                </View>
             </View>
-        </View>
+        </TouchableOpacity>
     );
   }
 
 const styles = StyleSheet.create({
     card: {
-        borderRadius: 15,
-        backgroundColor: colors.white,
-        marginBottom: 20,
-        overflow: 'hidden',
+        margin: 5,
+        borderRadius: 12,
+        flexDirection: 'row',
+    },
+    imageContainer: {
+        flex: 1,
+        padding: '3%',
+    },
+    cardImage: {
+        width: 100,
+        height: 100,
+        borderRadius: 12,
+        alignSelf: 'center'
     },
     detailsContainer: {
-        padding: 20,
+        flex: 2,
+        padding: '3%',
     },
-    image: {
-        width: '100%',
-        height: 200,
-    },
-    title: {
-        color: colors.black,
-        fontSize: 18,
-        fontWeight: 'bold',
-    },
-    category: {
+    trendCategory: {
+        fontSize: 14,
         color: colors.primary,
-        fontSize: 15,
+        fontWeight: 'bold'
+    },
+    trendTitle: {
+        fontSize: 18,
+        fontWeight: 'bold'
     },
 })
 

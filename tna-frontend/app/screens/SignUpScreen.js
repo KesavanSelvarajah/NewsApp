@@ -1,20 +1,23 @@
-import React from 'react';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import React, { useState} from 'react';
+import { StyleSheet, SafeAreaView, Text, View} from 'react-native';
+
+import colors from '../../config/colors';
 import AppTextInput from '../components/AppTextInput';
 import AppButton from '../components/AppButton';
-import colors from '../../config/colors';
 
-export default function SignInScreen() {
+export default function SignUpScreen() {
     return (
         <SafeAreaView style= {styles.container}>
-            <Text style= {styles.title}>Welcome Back 👋</Text>
-            <Text numberOfLines={2} style= {styles.subtitle}>We are happy to see you again. You can continue where you left off by logging in</Text>
+            <Text style= {styles.title}>Welcome to News App 👋</Text>
+            <Text numberOfLines={2} style= {styles.subtitle}>Hello, we guess you are new here. You can start using the application after a quick sign up.</Text>
             <View style= {styles.textInputContainer}>
+                <AppTextInput icon='account' placeholder='Username' maxLength={10}  autoCapitalize='none' autoCorrect={false} textContentType='username'/>
                 <AppTextInput icon='email' placeholder='Email Address' autoCapitalize='none' autoCorrect={false} keyboardType='email-address' textContentType='emailAddress'/>
                 <AppTextInput icon='lock' placeholder='Password' autoCapitalize='none' autoCorrect={false} secureTextEntry textContentType='password'/>
+                <AppTextInput icon='lock' placeholder='Repeat password' autoCapitalize='none' autoCorrect={false} secureTextEntry textContentType='password'/>
             </View>
-            <View style={styles.signInButtonContainer}>
-                <AppButton title='Sign In'></AppButton>
+            <View style={styles.signUpButtonContainer}>
+                <AppButton title='Sign Up'></AppButton>
             </View>
         </SafeAreaView>
     );
@@ -40,9 +43,8 @@ const styles = StyleSheet.create({
     textInputContainer: {
         alignItems: 'center'
     },
-    signInButtonContainer: {
+    signUpButtonContainer: {
         width: '90%',
         margin: 20,
     }
 })
-
