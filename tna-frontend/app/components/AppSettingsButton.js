@@ -7,7 +7,7 @@ import colors from '../../config/colors';
 function AppSettingsButton({title, onPress, color='primary', iconName, iconSize, iconColor='black', textColor='black', fontSize}) {
     return (
         <TouchableOpacity style={[styles.button, {backgroundColor: colors[color]}]} onPress={onPress}>
-            <Text style={[styles.text, {color: colors[textColor]}, {fontSize: fontSize}]}>{title}</Text>
+            <Text numberOfLines={1} style={[styles.text, {color: colors[textColor]}, {fontSize: fontSize}]}>{title}</Text>
             <MaterialCommunityIcons name={iconName} color={iconColor} size={iconSize} style={styles.icon}/>
         </TouchableOpacity>
     );

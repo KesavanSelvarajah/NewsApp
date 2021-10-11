@@ -24,13 +24,13 @@ export default function App() {
   // return <GetStartScreen/>;
   // return <LanguageScreen/>;  
   // return <NewsCategoriesScreen/>;
-  return <SignInScreen/>; 
+  // return <SignInScreen/>; 
   // return <SignUpScreen/>; 
-  // return <TopTenTrendingScreen/>;
-  // return <DailyDigestScreen/>;
-  // return <BookmarksScreen/>;
+  // return <TopTenTrendingScreen/>; //
+  // return <DailyDigestScreen/>; //
+  return <BookmarksScreen/>; //
   // return <ShortAndSimpleScreen/>;
   // return <ProfileScreen/>;
-  return <ChangePasswordScreen/>;  
-  // return <TermsScreen/>;  
+  // return <ChangePasswordScreen/>;  
+  // return <TermsScree+n/>;  
 }

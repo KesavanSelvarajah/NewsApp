@@ -8,10 +8,10 @@ function Card({ title, category, image, onPress}) {
         <TouchableOpacity onPress={onPress}>
             <View style={styles.card}>
                 <View style={styles.imageContainer}>
-                <Image resizeMode='cover' style={styles.cardImage} source={image}/>
+                <Image resizeMode='cover' style={styles.cardImage} source={{uri: image ? image: 'https://picsum.photos/200'}}/>
                 </View>
                 <View style={styles.detailsContainer}>
-                    <Text  style={styles.trendCategory}>{category}</Text>
+                    <Text numberOfLines={1}  style={styles.trendCategory}>{category}</Text>
                     <Text numberOfLines={3}  style={styles.trendTitle}>{title}</Text>
                 </View>
             </View>
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     },
     detailsContainer: {
         flex: 2,
-        padding: '3%',
+        padding: 20,
     },
     trendCategory: {
         fontSize: 14,
@@ -46,7 +46,8 @@ const styles = StyleSheet.create({
     },
     trendTitle: {
         fontSize: 18,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        paddingTop: 5,
     },
 })
 

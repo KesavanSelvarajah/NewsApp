@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { SafeAreaView, Text, StyleSheet, View} from 'react-native';
 import {MaterialCommunityIcons} from '@expo/vector-icons';
 import AppTextInput from '../components/AppTextInput';
@@ -7,17 +7,44 @@ import AppButton from '../components/AppButton';
 import colors from '../../config/colors';
 
 export default function ChangePasswordScreen() {
+    const [currentpassword, setCPassword] = useState();
+    const [newPassword, setNPassword] = useState();
+    const [rNewPassword, setRNPassword] = useState();
     return (
         <SafeAreaView style= {styles.container}>
             <MaterialCommunityIcons name='arrow-left' size={25} color='black' style={styles.icon}/>
             <Text style= {styles.title}>Change Password</Text>
             <View style= {styles.textInputContainer}>
-                <AppTextInput icon='lock' placeholder='Current Password' autoCapitalize='none' autoCorrect={false} secureTextEntry textContentType='password'/>
-                <AppTextInput icon='lock' placeholder='New Password' autoCapitalize='none' autoCorrect={false} secureTextEntry textContentType='newPassword'/>
-                <AppTextInput icon='lock' placeholder='Repeat New Password' autoCapitalize='none' autoCorrect={false} secureTextEntry textContentType='newPassword'/>
+                <AppTextInput 
+                    icon='lock' 
+                    placeholder='Current Password' 
+                    autoCapitalize='none' 
+                    autoCorrect={false} 
+                    secureTextEntry 
+                    textContentType='password'
+                    onChangeText={text => setCPassword(text)}
+                />
+                <AppTextInput 
+                    icon='lock' 
+                    placeholder='New Password' 
+                    autoCapitalize='none' 
+                    autoCorrect={false} 
+                    secureTextEntry 
+                    textContentType='newPassword'
+                    onChangeText={text => setNPassword(text)}
+                />
+                <AppTextInput 
+                    icon='lock' 
+                    placeholder='Repeat New Password' 
+                    autoCapitalize='none' 
+                    autoCorrect={false} 
+                    secureTextEntry 
+                    textContentType='newPassword'
+                    onChangeText={text => setRNPassword(text)}
+                />
             </View>
             <View style={styles.changePasswordButtonContainer}>
-                <AppButton title='Change Password'></AppButton>
+                <AppButton title='Change Password' onPress={() => console.log(currentpassword, newPassword, rNewPassword)}></AppButton>
             </View>
     </SafeAreaView>
     );

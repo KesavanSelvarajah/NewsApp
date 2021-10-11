@@ -1,49 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { StyleSheet, SafeAreaView, View, Text, FlatList } from 'react-native'
 
 import colors from '../../config/colors'
 import Card from '../components/Card'
 
-const datas = [
-    {
-        id: 1,
-        category: 'Category 1',
-        title: 'Title 1',
-        image: require('../assets/shorts.jpg')
-    },
-    {
-        id: 2,
-        category: 'Category 2',
-        title: 'Title 2',
-        image: require('../assets/trends.jpg')
-    },
-    {
-        id: 3,
-        category: 'Category 3',
-        title: 'Title 3',
-        image: require('../assets/digests.jpg')
-    },
-    {
-        id: 4,
-        category: 'Category 2',
-        title: 'Title 4',
-        image: require('../assets/shorts.jpg')
-    },
-    {
-        id: 5,
-        category: 'Category 3',
-        title: 'Title 5',
-        image: require('../assets/trends.jpg')
-    },
-    {
-        id: 6,
-        category: 'Category 1',
-        title: 'Title 6',
-        image: require('../assets/digests.jpg')
-    },
-]
+const data = require('../assets/data/topTenTrends.json');
 
 export default function TopTenTrendingScreen() {
+
+    const [trends, setTrends] = useState([]);
+
+    useEffect(() => {
+        setTrends(data);
+
+        return () => {
+            setTrends([])
+        }
+    }, [])
+
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.titleContainer}>
@@ -52,18 +26,20 @@ export default function TopTenTrendingScreen() {
             </View>
             <View style={styles.trendsContainer}>
                 <FlatList
-                    data={datas}
-                    keyExtractor={datas => datas.id.toString()}
+                    data={trends}
                     renderItem={({ item }) => 
                         <Card
                             title={item.title}
-                            category={item.category}
+                            category={item.category.name}
                             image={item.image}
-                            onPress={() => {console.log('Button tapped')}}/>}/>
+                            onPress={() => {console.log('Button tapped')}}/>}
+                    keyExtractor={item => item.id}
+                />
             </View>
         </SafeAreaView>
     )
 }
+
 
 const styles = StyleSheet.create({
     container: {

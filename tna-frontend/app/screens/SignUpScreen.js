@@ -6,18 +6,54 @@ import AppTextInput from '../components/AppTextInput';
 import AppButton from '../components/AppButton';
 
 export default function SignUpScreen() {
+    const [userName, setUserName] = useState();
+    const [email, setEmail] = useState();
+    const [password, setPassword] = useState();
+    const [rPassword, setRPassword] = useState();
     return (
         <SafeAreaView style= {styles.container}>
             <Text style= {styles.title}>Welcome to News App 👋</Text>
             <Text numberOfLines={2} style= {styles.subtitle}>Hello, we guess you are new here. You can start using the application after a quick sign up.</Text>
             <View style= {styles.textInputContainer}>
-                <AppTextInput icon='account' placeholder='Username' maxLength={10}  autoCapitalize='none' autoCorrect={false} textContentType='username'/>
-                <AppTextInput icon='email' placeholder='Email Address' autoCapitalize='none' autoCorrect={false} keyboardType='email-address' textContentType='emailAddress'/>
-                <AppTextInput icon='lock' placeholder='Password' autoCapitalize='none' autoCorrect={false} secureTextEntry textContentType='password'/>
-                <AppTextInput icon='lock' placeholder='Repeat password' autoCapitalize='none' autoCorrect={false} secureTextEntry textContentType='password'/>
+                <AppTextInput 
+                    icon='account' 
+                    placeholder='Username' 
+                    maxLength={10}  
+                    autoCapitalize='none' 
+                    autoCorrect={false} 
+                    textContentType='username'
+                    onChangeText={text => setUserName(text)}
+                />
+                <AppTextInput 
+                    icon='email'
+                    placeholder='Email Address' 
+                    autoCapitalize='none' 
+                    autoCorrect={false} 
+                    keyboardType='email-address' 
+                    textContentType='emailAddress'
+                    onChangeText={text => setEmail(text)}
+                />
+                <AppTextInput 
+                    icon='lock'
+                    placeholder='Password' 
+                    autoCapitalize='none' 
+                    autoCorrect={false} 
+                    secureTextEntry 
+                    textContentType='password'
+                    onChangeText={text => setPassword(text)}
+                />
+                <AppTextInput 
+                    icon='lock' 
+                    placeholder='Repeat password' 
+                    autoCapitalize='none' 
+                    autoCorrect={false} 
+                    secureTextEntry 
+                    textContentType='password'
+                    onChangeText={text => setRPassword(text)}
+                />
             </View>
             <View style={styles.signUpButtonContainer}>
-                <AppButton title='Sign Up'></AppButton>
+                <AppButton title='Sign Up' onPress={() => console.log(userName, email, password, rPassword)}></AppButton>
             </View>
         </SafeAreaView>
     );
