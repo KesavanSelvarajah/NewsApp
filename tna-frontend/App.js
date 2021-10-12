@@ -2,13 +2,15 @@ import React from "react";
 import { LogBox } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import Main from "./app/navigators/Main";
+import JustInstalled from "./app/navigators/JustInstalled"
 
 LogBox.ignoreAllLogs(true);
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Main/>
+      <JustInstalled/>
+      {/* <Main/> */}
     </NavigationContainer>
   );
 }
@@ -17,9 +19,9 @@ export default function App() {
   // return <IntroShortsScreen/>; 
   // return <IntroDigestsScreen/>;
   // return <IntroTrendsScreen/>;
-  // return <GetStartScreen/>;
   // return <LanguageScreen/>;  
   // return <NewsCategoriesScreen/>;
+  // return <GetStartScreen/>;
   // return <SignInScreen/>; 
   // return <SignUpScreen/>; 
   // return <TopTenTrendingScreen/>; //

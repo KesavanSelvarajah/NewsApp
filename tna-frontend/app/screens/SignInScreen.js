@@ -3,8 +3,10 @@ import { SafeAreaView, StyleSheet, Text, View } from "react-native";
 import AppTextInput from "../components/AppTextInput";
 import AppButton from "../components/AppButton";
 import colors from "../../config/colors";
+import { Colors } from "react-native/Libraries/NewAppScreen";
+import { TouchableOpacity } from "react-native-gesture-handler";
 
-export default function SignInScreen() {
+export default function SignInScreen(props) {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   return (
@@ -37,8 +39,22 @@ export default function SignInScreen() {
       <View style={styles.signInButtonContainer}>
         <AppButton
           title="Sign In"
-          onPress={() => console.log(email, password)}
+          onPress={() => {
+            props.navigation.navigate("Main");
+          }}
         ></AppButton>
+      </View>
+      <View style={styles.signUpContainer}>
+        <Text style={styles.subtitle}>Don't have an account?</Text>
+        <TouchableOpacity>
+          <Text
+            onPress={() => {
+              props.navigation.navigate("SignUp");
+            }}
+          >
+            Sign Up
+          </Text>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
@@ -67,5 +83,15 @@ const styles = StyleSheet.create({
   signInButtonContainer: {
     width: "90%",
     margin: 20,
+  },
+  signUpContainer: {
+    flex: 1,
+    flexDirection: "row",
+    alignContent: "center",
+    justifyContent: "center",
+  },
+  Signup: {
+    color: Colors.grey,
+    fontWeight: "bold",
   },
 });

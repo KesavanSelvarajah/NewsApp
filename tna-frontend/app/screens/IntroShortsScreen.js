@@ -1,17 +1,10 @@
 import React from "react";
-import {
-  SafeAreaView,
-  View,
-  Image,
-  StyleSheet,
-  Text,
-  Button,
-} from "react-native";
+import { SafeAreaView, View, Image, StyleSheet, Text } from "react-native";
 
 import colors from "../../config/colors";
 import AppButton from "../components/AppButton";
 
-export default function IntroShortsScreen() {
+export default function IntroShortsScreen(props) {
   return (
     <SafeAreaView style={styles.container}>
       <Image
@@ -25,7 +18,12 @@ export default function IntroShortsScreen() {
         </Text>
       </View>
       <View style={styles.shortsButtonContainer}>
-        <AppButton title="Next"></AppButton>
+        <AppButton
+          title="Next"
+          onPress={() => {
+            props.navigation.navigate("Digests");
+          }}
+        ></AppButton>
       </View>
     </SafeAreaView>
   );

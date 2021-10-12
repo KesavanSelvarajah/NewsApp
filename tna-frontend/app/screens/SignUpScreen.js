@@ -5,7 +5,7 @@ import colors from "../../config/colors";
 import AppTextInput from "../components/AppTextInput";
 import AppButton from "../components/AppButton";
 
-export default function SignUpScreen() {
+export default function SignUpScreen(props) {
   const [userName, setUserName] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
@@ -58,7 +58,9 @@ export default function SignUpScreen() {
       <View style={styles.signUpButtonContainer}>
         <AppButton
           title="Sign Up"
-          onPress={() => console.log(userName, email, password, rPassword)}
+          onPress={() => {
+            props.navigation.navigate("SignIn");
+          }}
         ></AppButton>
       </View>
     </SafeAreaView>

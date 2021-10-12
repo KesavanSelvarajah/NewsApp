@@ -11,7 +11,7 @@ import {
 import colors from "../../config/colors";
 import AppButton from "../components/AppButton";
 
-export default function GetStartScreen() {
+export default function GetStartScreen(props) {
   return (
     <SafeAreaView style={styles.container}>
       <Image
@@ -27,7 +27,9 @@ export default function GetStartScreen() {
       <View style={styles.startButtonContainer}>
         <AppButton
           title="Get Started"
-          onPress={() => console.log("Tapped")}
+          onPress={() => {
+            props.navigation.navigate("SignIn");
+          }}
         ></AppButton>
       </View>
     </SafeAreaView>

@@ -28,12 +28,8 @@ const Main = () => {
         name="Digests"
         component={DigestsNavigator}
         options={{
-          tabBarIcon: () => {
-            <Icon
-              name="newspaper-variant-outline"
-              color={colors}
-              size={20}
-            />;
+          tabBarIcon: ({ color }) => {
+            <Icon name="newspaper-variant-outline" color={color} size={20} />;
           },
         }}
       />
@@ -42,8 +38,7 @@ const Main = () => {
         component={TrendsNavigator}
         options={{
           tabBarIcon: ({ color }) => {
-            <MaterialCommunityIcons
-            name="home" color={color} size={30} />;
+            <MaterialCommunityIcons name="home" color={color} size={30} />;
           },
         }}
       />
@@ -52,11 +47,7 @@ const Main = () => {
         component={BookmarksNavigator}
         options={{
           tabBarIcon: ({ color }) => {
-            <MaterialCommunityIcons
-              name="bookmark"
-              color={colors}
-              size={30}
-            />;
+            <MaterialCommunityIcons name="bookmark" color={color} size={30} />;
           },
         }}
       />
@@ -65,11 +56,7 @@ const Main = () => {
         component={ProfileNavigator}
         options={{
           tabBarIcon: ({ color }) => {
-            <MaterialCommunityIcons
-              name="account"
-              color={color}
-              size={30}
-            />;
+            <MaterialCommunityIcons name="account" color={color} size={30} />;
           },
         }}
       />

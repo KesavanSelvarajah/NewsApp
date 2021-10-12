@@ -11,7 +11,7 @@ import {
 import colors from "../../config/colors";
 import AppButton from "../components/AppButton";
 
-export default function IntroDigestsScreen() {
+export default function IntroDigestsScreen(props) {
   return (
     <SafeAreaView style={styles.container}>
       <Image
@@ -25,7 +25,12 @@ export default function IntroDigestsScreen() {
         </Text>
       </View>
       <View style={styles.digestsButtonContainer}>
-        <AppButton title="Next" style={styles.digestsButton}></AppButton>
+        <AppButton
+          title="Next"
+          onPress={() => {
+            props.navigation.navigate("Trends");
+          }}
+        ></AppButton>
       </View>
     </SafeAreaView>
   );
