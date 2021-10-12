@@ -1,0 +1,45 @@
+[
+    {
+        "_id": "615ee3b312f05c02b910f44d",
+        "name": "user",
+        "email": "user@tna.com",
+        "isAdmin": false,
+        "image": "img_url",
+        "language": "English",
+        "favCategories": [
+            {
+                "_id": "615c4c12a42a87519c92ff26",
+                "name": "Politics",
+                "icon": "plt_icn_url",
+                "__v": 0,
+                "id": "615c4c12a42a87519c92ff26"
+            },
+            {
+                "_id": "615c4c26a42a87519c92ff28",
+                "name": "Sports",
+                "icon": "spt_icn_url",
+                "__v": 0,
+                "id": "615c4c26a42a87519c92ff28"
+            }
+        ],
+        "bookmarkedItems": [
+            {
+                "_id": "615c6ee75e2c9b437fa3e369",
+                "title": "News Title 1",
+                "image": "https://picsum.photos/200",
+                "category": "615c4c26a42a87519c92ff28",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "sourceName": "BBC",
+                "sourceURL": "https://picsum.photos/200",
+                "datePosted": "2021-10-05T15:27:35.674Z",
+                "likes": 0,
+                "dislikes": 0,
+                "shares": 0,
+                "__v": 0,
+                "id": "615c6ee75e2c9b437fa3e369"
+            }
+        ],
+        "__v": 0,
+        "id": "615ee3b312f05c02b910f44d"
+    }
+]
