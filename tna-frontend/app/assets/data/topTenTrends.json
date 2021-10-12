@@ -1,8 +1,8 @@
 [
   {
     "_id": "615c6ee75e2c9b437fa3e369",
-    "title": "News Title 1",
-    "image": "https://picsum.photos/200",
+    "title": "MS Dhoni's Match-Winning Knock Against DC",
+    "image": "https://c.ndtvimg.com/2021-10/p4mo95go_ms-dhoni-csk-bat-bcciipl_625x300_11_October_21.jpg?output-quality=80&downsize=1278:*",
     "category": {
       "_id": "615c4c26a42a87519c92ff28",
       "name": "Sports",
@@ -10,9 +10,9 @@
       "__v": 0,
       "id": "615c4c26a42a87519c92ff28"
     },
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "sourceName": "BBC",
-    "sourceURL": "https://picsum.photos/200",
+    "description": "Chennai Super Kings have been one of the most dominant teams in the Indian Premier League, consistently making it to the playoffs and duking it out with the others for top honours. But last season saw the Chennai franchise not qualify for the last four for the first time in IPL history. How do they bounce back from that disappointment? Well, reaching the IPL final, the very next year, is surely one way to prove all the doubters wrong. And the man right bang in the middle, leading them into the title clash is none other than 'Captain Cool' MS Dhoni.",
+    "sourceName": "NDTV",
+    "sourceURL": "https://sports.ndtv.com/ipl-2021/dc-vs-csk-ms-dhonis-match-winning-knock-that-broke-the-internet-watch-2571140",
     "datePosted": "2021-10-05T15:27:35.674Z",
     "likes": 0,
     "dislikes": 0,
@@ -21,51 +21,72 @@
     "id": "615c6ee75e2c9b437fa3e369"
   },
   {
-    "_id": "6163d81a91fa4b898757d189",
-    "title": "News Title 2",
-    "image": "https://picsum.photos/200",
+    "_id": "615c6ee75e2c9b437fa3e369",
+    "title": "Teachers & Principals meet PM, TUs to discuss govt solutions at length",
+    "image": "https://cdn.newsfirst.lk/english-uploads/2021/08/6c5f4d5d-teachers-protest-1.jpg",
     "category": {
-      "_id": "615c4c12a42a87519c92ff26",
+      "_id": "615c4c26a42a87519c92ff28",
       "name": "Politics",
       "icon": "plt_icn_url",
       "__v": 0,
-      "id": "615c4c12a42a87519c92ff26"
+      "id": "615c4c26a42a87519c92ff28"
     },
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "sourceName": "BBC",
-    "sourceURL": "https://picsum.photos/200",
+    "description": "The Prime Minister’s Media Unit said that trade union representatives were made aware of the solutions that the government would provide to call off the ongoing strike. Rohan Weliwita, the Media Secretary to the Prime Minister told News 1st that trade union representatives met with Prime Minister Mahinda Rajapaksa on Tuesday afternoon for talks.Teacher and Principal Trade Unions said they would discuss the solutions presented by the Government with their members and thereafter reached an agreement.",
+    "sourceName": "NewsFirst",
+    "sourceURL": "https://www.newsfirst.lk/2021/10/12/teachers-principals-meet-pm-tus-to-discuss-govt-solutions-at-length/",
     "datePosted": "2021-10-05T15:27:35.674Z",
     "likes": 0,
     "dislikes": 0,
     "shares": 0,
     "__v": 0,
-    "id": "6163d81a91fa4b898757d189"
+    "id": "615c6ee75e2c9b437fa3e369"
   },
   {
-    "_id": "6163d83a91fa4b898757d18a",
-    "title": "News Title 3",
-    "image": "https://picsum.photos/200",
+    "_id": "615c6ee75e2c9b437fa3e369",
+    "title": "MS Dhoni's Match-Winning Knock Against DC",
+    "image": "https://c.ndtvimg.com/2021-10/p4mo95go_ms-dhoni-csk-bat-bcciipl_625x300_11_October_21.jpg?output-quality=80&downsize=1278:*",
     "category": {
-      "_id": "615c4c12a42a87519c92ff26",
+      "_id": "615c4c26a42a87519c92ff28",
+      "name": "Sports",
+      "icon": "spt_icn_url",
+      "__v": 0,
+      "id": "615c4c26a42a87519c92ff28"
+    },
+    "description": "Chennai Super Kings have been one of the most dominant teams in the Indian Premier League, consistently making it to the playoffs and duking it out with the others for top honours. But last season saw the Chennai franchise not qualify for the last four for the first time in IPL history. How do they bounce back from that disappointment? Well, reaching the IPL final, the very next year, is surely one way to prove all the doubters wrong. And the man right bang in the middle, leading them into the title clash is none other than 'Captain Cool' MS Dhoni.",
+    "sourceName": "NDTV",
+    "sourceURL": "https://sports.ndtv.com/ipl-2021/dc-vs-csk-ms-dhonis-match-winning-knock-that-broke-the-internet-watch-2571140",
+    "datePosted": "2021-10-05T15:27:35.674Z",
+    "likes": 0,
+    "dislikes": 0,
+    "shares": 0,
+    "__v": 0,
+    "id": "615c6ee75e2c9b437fa3e369"
+  },
+  {
+    "_id": "615c6ee75e2c9b437fa3e369",
+    "title": "Teachers & Principals meet PM, TUs to discuss govt solutions at length",
+    "image": "https://cdn.newsfirst.lk/english-uploads/2021/08/6c5f4d5d-teachers-protest-1.jpg",
+    "category": {
+      "_id": "615c4c26a42a87519c92ff28",
       "name": "Politics",
       "icon": "plt_icn_url",
       "__v": 0,
-      "id": "615c4c12a42a87519c92ff26"
+      "id": "615c4c26a42a87519c92ff28"
     },
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "sourceName": "BBC",
-    "sourceURL": "https://picsum.photos/200",
+    "description": "The Prime Minister’s Media Unit said that trade union representatives were made aware of the solutions that the government would provide to call off the ongoing strike. Rohan Weliwita, the Media Secretary to the Prime Minister told News 1st that trade union representatives met with Prime Minister Mahinda Rajapaksa on Tuesday afternoon for talks.Teacher and Principal Trade Unions said they would discuss the solutions presented by the Government with their members and thereafter reached an agreement.",
+    "sourceName": "NewsFirst",
+    "sourceURL": "https://www.newsfirst.lk/2021/10/12/teachers-principals-meet-pm-tus-to-discuss-govt-solutions-at-length/",
     "datePosted": "2021-10-05T15:27:35.674Z",
     "likes": 0,
     "dislikes": 0,
     "shares": 0,
     "__v": 0,
-    "id": "6163d83a91fa4b898757d18a"
+    "id": "615c6ee75e2c9b437fa3e369"
   },
   {
-    "_id": "6163d84991fa4b898757d18b",
-    "title": "News Title 4",
-    "image": "https://picsum.photos/200",
+    "_id": "615c6ee75e2c9b437fa3e369",
+    "title": "MS Dhoni's Match-Winning Knock Against DC",
+    "image": "https://c.ndtvimg.com/2021-10/p4mo95go_ms-dhoni-csk-bat-bcciipl_625x300_11_October_21.jpg?output-quality=80&downsize=1278:*",
     "category": {
       "_id": "615c4c26a42a87519c92ff28",
       "name": "Sports",
@@ -73,20 +94,41 @@
       "__v": 0,
       "id": "615c4c26a42a87519c92ff28"
     },
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "sourceName": "BBC",
-    "sourceURL": "https://picsum.photos/200",
+    "description": "Chennai Super Kings have been one of the most dominant teams in the Indian Premier League, consistently making it to the playoffs and duking it out with the others for top honours. But last season saw the Chennai franchise not qualify for the last four for the first time in IPL history. How do they bounce back from that disappointment? Well, reaching the IPL final, the very next year, is surely one way to prove all the doubters wrong. And the man right bang in the middle, leading them into the title clash is none other than 'Captain Cool' MS Dhoni.",
+    "sourceName": "NDTV",
+    "sourceURL": "https://sports.ndtv.com/ipl-2021/dc-vs-csk-ms-dhonis-match-winning-knock-that-broke-the-internet-watch-2571140",
     "datePosted": "2021-10-05T15:27:35.674Z",
     "likes": 0,
     "dislikes": 0,
     "shares": 0,
     "__v": 0,
-    "id": "6163d84991fa4b898757d18b"
+    "id": "615c6ee75e2c9b437fa3e369"
   },
   {
-    "_id": "6163d85391fa4b898757d18c",
-    "title": "News Title 5",
-    "image": "https://picsum.photos/200",
+    "_id": "615c6ee75e2c9b437fa3e369",
+    "title": "Teachers & Principals meet PM, TUs to discuss govt solutions at length",
+    "image": "https://cdn.newsfirst.lk/english-uploads/2021/08/6c5f4d5d-teachers-protest-1.jpg",
+    "category": {
+      "_id": "615c4c26a42a87519c92ff28",
+      "name": "Politics",
+      "icon": "plt_icn_url",
+      "__v": 0,
+      "id": "615c4c26a42a87519c92ff28"
+    },
+    "description": "The Prime Minister’s Media Unit said that trade union representatives were made aware of the solutions that the government would provide to call off the ongoing strike. Rohan Weliwita, the Media Secretary to the Prime Minister told News 1st that trade union representatives met with Prime Minister Mahinda Rajapaksa on Tuesday afternoon for talks.Teacher and Principal Trade Unions said they would discuss the solutions presented by the Government with their members and thereafter reached an agreement.",
+    "sourceName": "NewsFirst",
+    "sourceURL": "https://www.newsfirst.lk/2021/10/12/teachers-principals-meet-pm-tus-to-discuss-govt-solutions-at-length/",
+    "datePosted": "2021-10-05T15:27:35.674Z",
+    "likes": 0,
+    "dislikes": 0,
+    "shares": 0,
+    "__v": 0,
+    "id": "615c6ee75e2c9b437fa3e369"
+  },
+  {
+    "_id": "615c6ee75e2c9b437fa3e369",
+    "title": "MS Dhoni's Match-Winning Knock Against DC",
+    "image": "https://c.ndtvimg.com/2021-10/p4mo95go_ms-dhoni-csk-bat-bcciipl_625x300_11_October_21.jpg?output-quality=80&downsize=1278:*",
     "category": {
       "_id": "615c4c26a42a87519c92ff28",
       "name": "Sports",
@@ -94,20 +136,41 @@
       "__v": 0,
       "id": "615c4c26a42a87519c92ff28"
     },
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "sourceName": "BBC",
-    "sourceURL": "https://picsum.photos/200",
+    "description": "Chennai Super Kings have been one of the most dominant teams in the Indian Premier League, consistently making it to the playoffs and duking it out with the others for top honours. But last season saw the Chennai franchise not qualify for the last four for the first time in IPL history. How do they bounce back from that disappointment? Well, reaching the IPL final, the very next year, is surely one way to prove all the doubters wrong. And the man right bang in the middle, leading them into the title clash is none other than 'Captain Cool' MS Dhoni.",
+    "sourceName": "NDTV",
+    "sourceURL": "https://sports.ndtv.com/ipl-2021/dc-vs-csk-ms-dhonis-match-winning-knock-that-broke-the-internet-watch-2571140",
     "datePosted": "2021-10-05T15:27:35.674Z",
     "likes": 0,
     "dislikes": 0,
     "shares": 0,
     "__v": 0,
-    "id": "6163d85391fa4b898757d18c"
+    "id": "615c6ee75e2c9b437fa3e369"
   },
   {
-    "_id": "6163d85d91fa4b898757d18d",
-    "title": "News Title 6",
-    "image": "https://picsum.photos/200",
+    "_id": "615c6ee75e2c9b437fa3e369",
+    "title": "Teachers & Principals meet PM, TUs to discuss govt solutions at length",
+    "image": "https://cdn.newsfirst.lk/english-uploads/2021/08/6c5f4d5d-teachers-protest-1.jpg",
+    "category": {
+      "_id": "615c4c26a42a87519c92ff28",
+      "name": "Politics",
+      "icon": "plt_icn_url",
+      "__v": 0,
+      "id": "615c4c26a42a87519c92ff28"
+    },
+    "description": "The Prime Minister’s Media Unit said that trade union representatives were made aware of the solutions that the government would provide to call off the ongoing strike. Rohan Weliwita, the Media Secretary to the Prime Minister told News 1st that trade union representatives met with Prime Minister Mahinda Rajapaksa on Tuesday afternoon for talks.Teacher and Principal Trade Unions said they would discuss the solutions presented by the Government with their members and thereafter reached an agreement.",
+    "sourceName": "NewsFirst",
+    "sourceURL": "https://www.newsfirst.lk/2021/10/12/teachers-principals-meet-pm-tus-to-discuss-govt-solutions-at-length/",
+    "datePosted": "2021-10-05T15:27:35.674Z",
+    "likes": 0,
+    "dislikes": 0,
+    "shares": 0,
+    "__v": 0,
+    "id": "615c6ee75e2c9b437fa3e369"
+  },
+  {
+    "_id": "615c6ee75e2c9b437fa3e369",
+    "title": "MS Dhoni's Match-Winning Knock Against DC",
+    "image": "https://c.ndtvimg.com/2021-10/p4mo95go_ms-dhoni-csk-bat-bcciipl_625x300_11_October_21.jpg?output-quality=80&downsize=1278:*",
     "category": {
       "_id": "615c4c26a42a87519c92ff28",
       "name": "Sports",
@@ -115,14 +178,36 @@
       "__v": 0,
       "id": "615c4c26a42a87519c92ff28"
     },
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "sourceName": "BBC",
-    "sourceURL": "https://picsum.photos/200",
+    "description": "Chennai Super Kings have been one of the most dominant teams in the Indian Premier League, consistently making it to the playoffs and duking it out with the others for top honours. But last season saw the Chennai franchise not qualify for the last four for the first time in IPL history. How do they bounce back from that disappointment? Well, reaching the IPL final, the very next year, is surely one way to prove all the doubters wrong. And the man right bang in the middle, leading them into the title clash is none other than 'Captain Cool' MS Dhoni.",
+    "sourceName": "NDTV",
+    "sourceURL": "https://sports.ndtv.com/ipl-2021/dc-vs-csk-ms-dhonis-match-winning-knock-that-broke-the-internet-watch-2571140",
     "datePosted": "2021-10-05T15:27:35.674Z",
     "likes": 0,
     "dislikes": 0,
     "shares": 0,
     "__v": 0,
-    "id": "6163d85d91fa4b898757d18d"
+    "id": "615c6ee75e2c9b437fa3e369"
+  },
+  {
+    "_id": "615c6ee75e2c9b437fa3e369",
+    "title": "Teachers & Principals meet PM, TUs to discuss govt solutions at length",
+    "image": "https://cdn.newsfirst.lk/english-uploads/2021/08/6c5f4d5d-teachers-protest-1.jpg",
+    "category": {
+      "_id": "615c4c26a42a87519c92ff28",
+      "name": "Politics",
+      "icon": "plt_icn_url",
+      "__v": 0,
+      "id": "615c4c26a42a87519c92ff28"
+    },
+    "description": "The Prime Minister’s Media Unit said that trade union representatives were made aware of the solutions that the government would provide to call off the ongoing strike. Rohan Weliwita, the Media Secretary to the Prime Minister told News 1st that trade union representatives met with Prime Minister Mahinda Rajapaksa on Tuesday afternoon for talks.Teacher and Principal Trade Unions said they would discuss the solutions presented by the Government with their members and thereafter reached an agreement.",
+    "sourceName": "NewsFirst",
+    "sourceURL": "https://www.newsfirst.lk/2021/10/12/teachers-principals-meet-pm-tus-to-discuss-govt-solutions-at-length/",
+    "datePosted": "2021-10-05T15:27:35.674Z",
+    "likes": 0,
+    "dislikes": 0,
+    "shares": 0,
+    "__v": 0,
+    "id": "615c6ee75e2c9b437fa3e369"
   }
+  
 ]
